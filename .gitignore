@@ -1,0 +1,21 @@
+﻿# Python
+__pycache__/
+*.pyc
+.env
+.venv
+
+# Jupyter
+.ipynb_checkpoints/
+
+# React / Node
+node_modules/
+build/
+dist/
+
+frontend/node_modules/
+frontend/build/
+
+# Logs & OS
+*.log
+.DS_Store
+Thumbs.db
