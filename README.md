@@ -265,7 +265,6 @@ You can test the API using Postman:
 * Algerian Forest Fires Dataset
 * Canadian Forest Fire Weather Index System
 * FastAPI and React communities
-* UCI Machine Learning Repository
 * Kaggle
 
 
