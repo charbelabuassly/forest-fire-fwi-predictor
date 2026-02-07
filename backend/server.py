@@ -6,8 +6,6 @@ import pandas as pd
 import numpy as np
 
 app = FastAPI() #creating fastapi object
-ridge_pipeline = joblib.load("../model/ridge_pipeline.joblib")  # loading the saved pipeline
-
 class FWIRequest(BaseModel): #Creating the base model of the request for validation
     Temperature: float
     RH: float
@@ -21,7 +19,7 @@ class FWIRequest(BaseModel): #Creating the base model of the request for validat
 origins = [
     "http://localhost:3000" 
 ]
-
+ridge_pipeline = joblib.load("../model/ridge_pipeline.joblib")  # loading the saved pipeline
 app.add_middleware( #allowing communications with the react frontend
     CORSMiddleware,
     allow_origins=origins,
